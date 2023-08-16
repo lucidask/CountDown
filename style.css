@@ -1,0 +1,75 @@
+
+#videoback {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.jumbotron {
+	min-width: 30vw;
+}
+
+.input-group {
+	display: flex;
+	justify-content: center;
+
+}
+
+.d-flex {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+.btnstart {
+	margin-top: 10px;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	color: white;
+	border-radius: 5px;
+}
+
+.countdown {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+p {
+	background-color: #007bff;
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+.set {
+/*	display: none;*/
+}
+
+.reset {
+	display: none;
+	margin-top: 10px;
+}
+
+.succes {
+	display: none;
+	margin-top: 10px;
+}
+
+.finish {
+	display: flex;
+	justify-content: center;
+	color: white;
+	border-radius: 5px;
+}
+
+.btnok {
+	margin-top: 10px;
+}

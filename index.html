@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<title>Calm Down</title>
+	</head>
+	<body>
+		<!-- The video -->
+		<video autoplay muted loop id="videoback">
+		  <source src="background.mp4" type="video/mp4">
+		</video>
+
+		<div class="d-flex">
+		    <div class="jumbotron my-auto">
+		    	<form>
+		    		<div class="set" id="set">
+		    			<div class="input-group input-group-sm mb-3">
+				      		<input type="text" class="form-control" id="inputTitle" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Set count down title" required>
+				      	</div>
+				    	<hr class="my-4">
+				     	<input class="form-control" type="datetime-local" id="inputDateTime"required>
+				     	<div class="text-center btnstart">
+							<button type="button" class="btn btn-primary" onclick="onStartPress()">Start</button>
+						</div>
+		    		</div>
+		    		<div class="reset" id="reset">
+		    			<span class="bg-primary title">Title</span>
+		    			<div class="countdown">
+		    				<p class="day">0</p>
+		    				<p class="hour">0</p>
+		    				<p class="minute">0</p>
+		    				<p class="second">0</p>
+		    			</div>
+		    			<div class="text-center btnreset">
+							<button type="button" class="btn btn-danger" onclick="onResetPress()">Reset</button>
+						</div>
+		    		</div>
+		    		<div class="succes" id="succes">
+		    			<span class="bg-primary finish">: Succes</span>
+		    			<div class="text-center btnok">
+							<button type="button" class="btn btn-success" onclick="onOkPress()">OK</button>
+						</div>
+		    		</div>
+		    	</form>
+		    </div>
+		</div>
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
